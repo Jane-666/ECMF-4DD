@@ -58,7 +58,7 @@ except Exception as exc:  # pragma: no cover
 # Warning filtering
 # ============================================================
 # Suppress a known DGL CPU-affinity warning that does not affect training.
-# Keep sklearn warnings visible because they may expose split or label issues.
+
 try:
     from dgl.base import DGLWarning
 
@@ -675,9 +675,6 @@ class ECRDNetV15(nn.Module):
             views.append(v)
             count_info[f"count_{vt}"] = counts
 
-        # ============================================================
-        # v1.5 semantic composite tokens
-        # ============================================================
         # No new neighbors or Patient-Item-Patient metapaths are introduced here.
         # These views reorganize already computed Drug/Lab/Procedure representations.
         if self.use_semantic_composite:
