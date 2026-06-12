@@ -51,11 +51,7 @@ SINGLE_SEED = "1"
 #     4. attention, message, and gate computation use edge_attr;
 #     5. degree / IDF-aware denoising gate;
 #     6. self/drug/lab/procedure view-level attention.
-#
-# Important constraints:
-#   No Patient-Item-Patient metapath graph is constructed;
-#   No dataset reconstruction is performed;
-#   mini-batch means Patient mini-batch; all one-hop neighbors are kept.
+
 
 DEFAULT_EPOCHS = 300
 DEFAULT_PATIENCE = 30
