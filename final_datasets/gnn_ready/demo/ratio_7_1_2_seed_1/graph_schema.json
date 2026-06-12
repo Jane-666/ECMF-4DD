@@ -1,0 +1,57 @@
+{
+  "dataset": "synthetic_demo",
+  "warning": "Synthetic demo data only. Not used in paper experiments.",
+  "node_summary": {
+    "Patient": {
+      "num_nodes": 60,
+      "feature_dim": 85
+    },
+    "Drug": {
+      "num_nodes": 15,
+      "feature_dim": 131
+    },
+    "Lab_Item": {
+      "num_nodes": 12,
+      "feature_dim": 133
+    },
+    "Procedure": {
+      "num_nodes": 10,
+      "feature_dim": 131
+    }
+  },
+  "edge_summary": {
+    "patient_drug": {
+      "canonical_etype": [
+        "Patient",
+        "uses_drug",
+        "Drug"
+      ],
+      "num_edges": 180,
+      "edge_attr_dim": 8
+    },
+    "patient_lab": {
+      "canonical_etype": [
+        "Patient",
+        "has_lab",
+        "Lab_Item"
+      ],
+      "num_edges": 240,
+      "edge_attr_dim": 10
+    },
+    "patient_procedure": {
+      "canonical_etype": [
+        "Patient",
+        "has_procedure",
+        "Procedure"
+      ],
+      "num_edges": 120,
+      "edge_attr_dim": 6
+    }
+  },
+  "supervision_summary": {
+    "num_classes": 6,
+    "train": 42,
+    "val": 6,
+    "test": 12
+  }
+}

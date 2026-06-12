@@ -1,0 +1,6 @@
+{
+  "project_root": "./",
+  "gnn_ready_root": "./final_datasets/gnn_ready",
+  "dataset": "mimic4",
+  "split": "ratio_7_1_2_seed_1"
+}

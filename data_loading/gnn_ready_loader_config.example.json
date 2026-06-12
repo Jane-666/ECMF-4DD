@@ -1,0 +1,8 @@
+{
+  "project_root": "./",
+  "dataset_key": "demo",
+  "split_name": "ratio_7_1_2_seed_1",
+  "backend": "dgl",
+  "device": "cpu",
+  "verbose": true
+}

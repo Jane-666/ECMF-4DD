@@ -1,0 +1,6 @@
+cff-version: 1.2.0
+title: "ECMF-4DD"
+authors:
+  - family-names: Xiao
+    given-names: Zhanbin
+message: "If you use this code, please cite the ECMF-4DD paper."
