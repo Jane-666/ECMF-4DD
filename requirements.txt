@@ -1,5 +1,8 @@
-numpy
-pandas
-scikit-learn
-torch
-dgl
+# Recommended Python version: 3.10+
+# Install the PyTorch build that matches your local CUDA/CPU environment.
+
+numpy>=1.23.0
+pandas>=1.5.0
+scikit-learn>=1.2.0
+torch>=2.0.0
+dgl>=1.1.0
